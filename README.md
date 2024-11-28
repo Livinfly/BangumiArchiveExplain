@@ -31,13 +31,13 @@ bangumi-2024-11-19
 
 ```go
 type Character struct {                          // 实体
-	ID       model.CharacterID `json:"id"`       // 实体id https://bgm.tv/character/[id]
-	Role     uint8             `json:"role"`     // 1角色，2机器/机甲，3战舰，4标志（猜测）
-	Name     string            `json:"name"`     // 姓名
-	Infobox  string            `json:"infobox"`  // 别名等，详细见 character_infobox.json
-	Summary  string            `json:"summary"`  // 简介
-	Comments uint32            `json:"comments"` // 评论/吐槽数（含楼中楼）
-	Collects uint32            `json:"collects"` // 收藏数
+    ID       model.CharacterID `json:"id"`       // 实体id https://bgm.tv/character/[id]
+    Role     uint8             `json:"role"`     // 1角色，2机器/机甲，3战舰，4标志（猜测）
+    Name     string            `json:"name"`     // 姓名
+    Infobox  string            `json:"infobox"`  // 别名等，详细见 character_infobox.json
+    Summary  string            `json:"summary"`  // 简介
+    Comments uint32            `json:"comments"` // 评论/吐槽数（含楼中楼）
+    Collects uint32            `json:"collects"` // 收藏数
 }
 ```
 
@@ -50,17 +50,17 @@ type Character struct {                          // 实体
 ## episode.jsonlines
 
 ```go
-type Episode struct {								 // 剧集/曲目
-	ID          model.EpisodeID `json:"id"`          // 剧集/曲目id https://bgm.tv/ep/[id]
-	Name        string          `json:"name"`        // 名字
-	NameCn      string          `json:"name_cn"`     // 简体中文名（显示于章节列表）
-	Description string          `json:"description"` // 描述（常包含staff，summary）
-	AirDate     string          `json:"airdate"`     // 首播日期
-	Disc        uint8           `json:"disc"`        // 第[disc]张光盘
-	Duration    string          `json:"duration"`    // 时长
-	SubjectID   model.SubjectID `json:"subject_id"`  // 作品id https://bgm.tv/subject/[id]
-	Sort        float32         `json:"sort"`        // 序话，第[sort]集
-	Type        episode.Type    `json:"type"`        // 0正篇，1特别篇（番外/总集），2OP，3ED，4Trailer，5MAD，6O其他
+type Episode struct {                                // 剧集/曲目
+    ID          model.EpisodeID `json:"id"`          // 剧集/曲目id https://bgm.tv/ep/[id]
+    Name        string          `json:"name"`        // 名字
+    NameCn      string          `json:"name_cn"`     // 简体中文名（显示于章节列表）
+    Description string          `json:"description"` // 描述（常包含staff，summary）
+    AirDate     string          `json:"airdate"`     // 首播日期
+    Disc        uint8           `json:"disc"`        // 第[disc]张光盘
+    Duration    string          `json:"duration"`    // 时长
+    SubjectID   model.SubjectID `json:"subject_id"`  // 作品id https://bgm.tv/subject/[id]
+    Sort        float32         `json:"sort"`        // 序话，第[sort]集
+    Type        episode.Type    `json:"type"`        // 0正篇，1特别篇（番外/总集），2OP，3ED，4Trailer，5MAD，6O其他
 }
 ```
 
@@ -68,10 +68,10 @@ type Episode struct {								 // 剧集/曲目
 
 ```go
 type PersonCharacter struct {                           // 人物-角色（作品）
-	PersonID    model.PersonID    `json:"person_id"`    // 人物id https://bgm.tv/person/[id]
-	SubjectID   model.SubjectID   `json:"subject_id"`   // 参与作品id https://bgm.tv/subject/[id]
-	CharacterID model.CharacterID `json:"character_id"` // 对应作品中的角色id https://bgm.tv/character/[id]
-	Summary     string            `json:"summary"`      // 概要（空）
+    PersonID    model.PersonID    `json:"person_id"`    // 人物id https://bgm.tv/person/[id]
+    SubjectID   model.SubjectID   `json:"subject_id"`   // 参与作品id https://bgm.tv/subject/[id]
+    CharacterID model.CharacterID `json:"character_id"` // 对应作品中的角色id https://bgm.tv/character/[id]
+    Summary     string            `json:"summary"`      // 概要（空）
 }
 ```
 
@@ -79,14 +79,14 @@ type PersonCharacter struct {                           // 人物-角色（作�
 
 ```go
 type Person struct {                          // 人物
-	ID       model.PersonID `json:"id"`       // 人物id https://bgm.tv/person/[id]
-	Name     string         `json:"name"`     // 名字
-	Type     uint8          `json:"type"`     // 1 2 3，不太看得出来是分类
-	Career   []string       `json:"career"`   // 职业
-	Infobox  string         `json:"infobox"`  // 别名等
-	Summary  string         `json:"summary"`  // 简介
-	Comments uint32         `json:"comments"` // 评论/吐槽数（含楼中楼）
-	Collects uint32         `json:"collects"` // 收藏数
+    ID       model.PersonID `json:"id"`       // 人物id https://bgm.tv/person/[id]
+    Name     string         `json:"name"`     // 名字
+    Type     uint8          `json:"type"`     // 1 2 3，不太看得出来是分类
+    Career   []string       `json:"career"`   // 职业
+    Infobox  string         `json:"infobox"`  // 别名等
+    Summary  string         `json:"summary"`  // 简介
+    Comments uint32         `json:"comments"` // 评论/吐槽数（含楼中楼）
+    Collects uint32         `json:"collects"` // 收藏数
 }
 ```
 
@@ -102,9 +102,9 @@ type Person struct {                          // 人物
 
 ```go
 type SubjectCharacter struct {                          // 作品-角色
-	CharacterID model.CharacterID `json:"character_id"` // 角色id https://bgm.tv/character/[id]
-	SubjectID   model.SubjectID   `json:"subject_id"`   // 作品id https://bgm.tv/subject/[id]
-	Type        uint8             `json:"type"`         // 1主角，2配角，3客串
+    CharacterID model.CharacterID `json:"character_id"` // 角色id https://bgm.tv/character/[id]
+    SubjectID   model.SubjectID   `json:"subject_id"`   // 作品id https://bgm.tv/subject/[id]
+    Type        uint8             `json:"type"`         // 1主角，2配角，3客串
     Order       uint16            `json:"order"`        // 作品角色列表排序(type, order)，不保证order连续。
 }
 ```
@@ -113,8 +113,8 @@ type SubjectCharacter struct {                          // 作品-角色
 
 ```go
 type SubjectPerson struct {                       // 作品-人物
-	PersonID  model.PersonID  `json:"person_id"`  // 人物id https://bgm.tv/person/[id]
-	SubjectID model.SubjectID `json:"subject_id"` // 作品id https://bgm.tv/subject/[id]
+    PersonID  model.PersonID  `json:"person_id"`  // 人物id https://bgm.tv/person/[id]
+    SubjectID model.SubjectID `json:"subject_id"` // 作品id https://bgm.tv/subject/[id]
     Position  uint16          `json:"position"`   // 担任职位
 }
 ```
@@ -125,10 +125,10 @@ type SubjectPerson struct {                       // 作品-人物
 
 ```go
 type SubjectRelation struct {                                    // 作品-作品
-	SubjectID        model.SubjectID `json:"subject_id"`         // 作品id https://bgm.tv/subject/[id]
-	RelationType     uint16          `json:"relation_type"`      // 关联类型
-	RelatedSubjectID model.SubjectID `json:"related_subject_id"` // 关联作品id https://bgm.tv/subject/[id]
-	Order            uint16          `json:"order"`              // 关联排序
+    SubjectID        model.SubjectID `json:"subject_id"`         // 作品id https://bgm.tv/subject/[id]
+    RelationType     uint16          `json:"relation_type"`      // 关联类型
+    RelatedSubjectID model.SubjectID `json:"related_subject_id"` // 关联作品id https://bgm.tv/subject/[id]
+    Order            uint16          `json:"order"`              // 关联排序
 }
 ```
 
@@ -136,22 +136,22 @@ type SubjectRelation struct {                                    // 作品-作�
 
 ```go
 type Subject struct {                            // 作品
-	ID       model.SubjectID   `json:"id"`       // 作品id https://bgm.tv/subject/[id]
-	Type     model.SubjectType `json:"type"`     // 1漫画，2动画，3音乐，4游戏，6三次元
-	Name     string            `json:"name"`     // 名字
-	NameCN   string            `json:"name_cn"`  // 简体中文名
-	Infobox  string            `json:"infobox"`  // 别名等
-	Platform uint16            `json:"platform"` // 媒介（类别）见 server/pkg/vars/platform
-	Summary  string            `json:"summary"`  // 简介
-	Nsfw     bool              `json:"nsfw"`     // 是否 Nsfw
+    ID       model.SubjectID   `json:"id"`       // 作品id https://bgm.tv/subject/[id]
+    Type     model.SubjectType `json:"type"`     // 1漫画，2动画，3音乐，4游戏，6三次元
+    Name     string            `json:"name"`     // 名字
+    NameCN   string            `json:"name_cn"`  // 简体中文名
+    Infobox  string            `json:"infobox"`  // 别名等
+    Platform uint16            `json:"platform"` // 媒介（类别）见 server/pkg/vars/platform
+    Summary  string            `json:"summary"`  // 简介
+    Nsfw     bool              `json:"nsfw"`     // 是否 Nsfw
 
-	Tags         []Tag    `json:"tags"`          // 公共标签
-	Score        float64  `json:"score"`         // 评分
-	ScoreDetails Score    `json:"score_details"` // 评分细节
-	Rank         uint32   `json:"rank"`          // 类别内排名
-	Date         string   `json:"date"`          // 发行日期
-	Favorite     Favorite `json:"favorite"`      // 收藏状态（想看、看过、在看、搁置、抛弃）
+    Tags         []Tag    `json:"tags"`          // 公共标签
+    Score        float64  `json:"score"`         // 评分
+    ScoreDetails Score    `json:"score_details"` // 评分细节
+    Rank         uint32   `json:"rank"`          // 类别内排名
+    Date         string   `json:"date"`          // 发行日期
+    Favorite     Favorite `json:"favorite"`      // 收藏状态（想看、看过、在看、搁置、抛弃）
 
-	Series bool `json:"series"`                  // 系列（单行本？）
+    Series bool `json:"series"`                  // 系列（单行本？）
 }
 ```
