@@ -1,0 +1,107 @@
+[
+    {
+        "type": 1,
+        "career": "producer",
+        "count": 27174
+    },
+    {
+        "type": 1,
+        "career": "mangaka",
+        "count": 11466
+    },
+    {
+        "type": 1,
+        "career": "seiyu",
+        "count": 9456
+    },
+    {
+        "type": 1,
+        "career": "artist",
+        "count": 8691
+    },
+    {
+        "type": 1,
+        "career": "writer",
+        "count": 7440
+    },
+    {
+        "type": 1,
+        "career": "actor",
+        "count": 5208
+    },
+    {
+        "type": 1,
+        "career": "illustrator",
+        "count": 4840
+    },
+    {
+        "type": 2,
+        "career": "producer",
+        "count": 5968
+    },
+    {
+        "type": 2,
+        "career": "artist",
+        "count": 60
+    },
+    {
+        "type": 2,
+        "career": "writer",
+        "count": 32
+    },
+    {
+        "type": 2,
+        "career": "illustrator",
+        "count": 16
+    },
+    {
+        "type": 2,
+        "career": "mangaka",
+        "count": 13
+    },
+    {
+        "type": 2,
+        "career": "seiyu",
+        "count": 9
+    },
+    {
+        "type": 2,
+        "career": "actor",
+        "count": 2
+    },
+    {
+        "type": 3,
+        "career": "artist",
+        "count": 1143
+    },
+    {
+        "type": 3,
+        "career": "producer",
+        "count": 419
+    },
+    {
+        "type": 3,
+        "career": "mangaka",
+        "count": 52
+    },
+    {
+        "type": 3,
+        "career": "seiyu",
+        "count": 33
+    },
+    {
+        "type": 3,
+        "career": "illustrator",
+        "count": 27
+    },
+    {
+        "type": 3,
+        "career": "writer",
+        "count": 14
+    },
+    {
+        "type": 3,
+        "career": "actor",
+        "count": 5
+    }
+]
