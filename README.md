@@ -14,6 +14,8 @@
 
 职位、条目关系等定义见 [bangumi/server](https://github.com/bangumi/server) 中 `/pkg/vars` 下的 **platform** ，**relation** ，**staff** 等文件。
 
+**infobox** 的语法和解析参考 [bangumi/wiki-parser](https://github.com/bangumi/wiki-parser) 与 [bangumi/wiki-syntax-spec: wiki语法spec](https://github.com/bangumi/wiki-syntax-spec) 。
+
 ```shell
 # 文件结构
 bangumi-2024-11-19
