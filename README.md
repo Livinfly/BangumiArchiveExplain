@@ -14,6 +14,8 @@
 
 职位、条目关系等定义见 [bangumi/server](https://github.com/bangumi/server) 中 `/pkg/vars` 下的 **platform** ，**relation** ，**staff** 等文件。
 
+upd. 最新版对应关系在 [bangumi/common](https://github.com/bangumi/common) 中。
+
 **infobox** 的语法和解析参考 [bangumi/wiki-parser](https://github.com/bangumi/wiki-parser) 与 [bangumi/wiki-syntax-spec: wiki语法spec](https://github.com/bangumi/wiki-syntax-spec) 。
 
 ```shell
@@ -34,7 +36,7 @@ bangumi-2024-11-19
 ```go
 type Character struct {                          // 实体
     ID       model.CharacterID `json:"id"`       // 实体id https://bgm.tv/character/[id]
-    Role     uint8             `json:"role"`     // 1角色，2机器/机甲，3战舰，4标志（猜测）
+    Role     uint8             `json:"role"`     // 1角色，2机体，3组织，4标志（猜测）
     Name     string            `json:"name"`     // 姓名
     Infobox  string            `json:"infobox"`  // 别名等，详细见 character_infobox.json
     Summary  string            `json:"summary"`  // 简介
@@ -122,6 +124,8 @@ type SubjectPerson struct {                       // 作品-人物
 ```
 
 [职位对应表](https://github.com/bangumi/server/blob/c72c7a4704565500af54d411550ce15af92fa2ed/pol/db/_const.py#L11)或见最新 [bangumi/server](https://github.com/bangumi/server) 的`/pkg/vars` **staff** 。
+
+最新版在 [bangumi/common](https://github.com/bangumi/common) 。
 
 ## subject-relations.jsonlines
 
